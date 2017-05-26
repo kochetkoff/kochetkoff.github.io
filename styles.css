@@ -27,7 +27,10 @@ html {
         min-height: 100vh;
     }
 }
-
+*::selection{
+    background-color: #ffe500;;
+    color: rgba(0, 0, 0, 0.8);
+}
 .btn-warning {
     color: #fff;
     background-color: #FFED4C;
@@ -75,7 +78,9 @@ html {
     background-color: #FFED4C;
     border-color: #FFF27F;
 }
-
+.small, small {
+    font-size: 60%;
+}
 .heading-light {
     padding-top: 3rem;
     padding-bottom: 1.4rem;
@@ -138,7 +143,7 @@ html {
 }
 #about-text {
     font-family: 'Caveat', cursive;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: rgba(0, 0, 0, 0.75);
     line-height: 1.2;
     text-align: left;
@@ -149,6 +154,10 @@ html {
     font-family: "FontAwesome";
     color: #ffffff;
     text-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
+}
+#about-icons a{
+    text-decoration: none;
+    color: #ffffff;
 }
 .fa:hover {
     color: #ffe500;
@@ -216,7 +225,6 @@ html {
 }
 
 #contact-wrapper {
-    /* background-color: #263238; */
     background-color: #4C5F79;
     color: white;
 }
