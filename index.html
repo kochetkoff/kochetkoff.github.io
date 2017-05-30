@@ -13,13 +13,41 @@
     <meta name="description" content="Artyom Kochetkoff. Frontend developer portfolio page.">
     <meta name="keywords" content="portfolio, web, dev, frontend developer, frontend master, js">
 </head>
-<body>
+<body data-spy="scroll" data-target="#mainWrapper" data-offset="80">
 <!-- 1 Screen start -->
-<div class="container-fluid">
-    <nav class="navbar fixed-top navbar-light">
-        <a class="navbar-brand" href="#">A. Kochetkoff
-        </a>
+<div id="mainWrapper" class="container-fluid">
+
+<!-- new navbar start -->
+    <nav class="row justify-content-around navbar navbar-toggleable navbar-inverse fixed-top">
+        <div class="hidden-sm-down col-auto">
+            <a class="navbar-brand" href="#">A. Kochetkoff</a>
+        </div>
+        <div class="col-auto">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto pl-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-wrapper">Who</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works-wrapper">What</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-wrapper">How</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-auto">
+            <a class="nav-link" href="tel:+375292645251">+375292645251</a>
+        </div>
     </nav>
+
+<!-- new navbar end -->
+
+
     <div id="main-wrapper" class="row">
         <div id="main-heading-wrapper" class="col-12 text-center">
             <h1 class="display-4 heading-light pb-0 mb-0">Frontend web developer</h1>
@@ -27,7 +55,7 @@
         <div id="main-subheading-wrapper" class="col-md-10 offset-md-1 text-center">
             <p>Who likes to make amazing web apps and sites with end user in mind. In order to make fast reliable mobile
                 friendly sites with clean design I master modern technologies: JavaScript, HTML5, CSS, JQuery, Git,
-                Webstorm, PS, PHP, SQL, SEO, Google analytics... and search :)
+                Bootstrap 4, Webstorm, PS, PHP, SQL, SEO, Google analytics... and search.
             </p>
         </div>
         <div id="main-btn-wrapper" class="col-12 text-center">
@@ -77,7 +105,7 @@
                     <h5 class="card-title">Factory of special shoes site</h5>
                     <h6 class="card-subtitle text-muted">Idea, concept, design</h6>
                 </div>
-                <img class="img img-fluid" src="img/works-img-1.jpg" alt="Card image" style="width:100%">
+                <img class="img img-fluid" src="img/luxozo.gif" alt="Card image" style="width:100%">
                 <div class="card-block card-block-btm">
                     <p class="card-text">I developed the concept of site and made design for spec shoes company.</p>
                     <a href="#" class="card-link">See full design case</a>
@@ -90,7 +118,7 @@
                     <h5 class="card-title">Tribute single page site</h5>
                     <h6 class="card-subtitle text-muted">Design, coding</h6>
                 </div>
-                <img class="img img-fluid" src="img/works-img-2.jpg" alt="Card image" style="width:100%">
+                <img class="img img-fluid" src="img/pomodoro.gif" alt="Card image" style="width:100%">
                 <div class="card-block card-block-btm">
                     <p class="card-text">Site devoted to Gilles Villeneuve - one of the best F1 drivers in history. Made by me from scratch.</p>
                     <a href="#" class="card-link">See full site case</a>
@@ -103,6 +131,51 @@
 <!-- //////////////////////////////////////////////// -->
         <div class="col-12 col-sm-6 col-md-6 col-lg-4">
             <div id="works-card-3" class="card">
+                <div class="card-block">
+                    <h5 class="card-title">Abstract 3D logo</h5>
+                    <h6 class="card-subtitle text-muted">Design</h6>
+                </div>
+                <img class="img img-fluid" src="img/rqm.gif" alt="Card image" style="width:100%">
+                <div class="card-block card-block-btm">
+                    <p class="card-text">Abstract logo symbolizing rapidity, globality and flexibility.</p>
+                    <br>
+                    <a href="#" class="card-link">See logo in portfolio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div id="works-card-4" class="card">
+                <div class="card-block">
+                    <h5 class="card-title">Tribute single page site</h5>
+                    <h6 class="card-subtitle text-muted">Design, coding</h6>
+                </div>
+                <img class="img img-fluid" src="img/gilles.gif" alt="Card image" style="width:100%">
+                <div class="card-block card-block-btm">
+                    <p class="card-text">Site devoted to Gilles Villeneuve - one of the best F1 drivers in history. Made by me from scratch.</p>
+                    <a href="#" class="card-link">See full site case</a>
+                </div>
+            </div>
+        </div>
+<!-- Clearfix after every 2 cards for sm-md size -->
+        <div class="clearfix hidden-lg-up hidden-xs-down">
+        </div>
+<!-- //////////////////////////////////////////////// -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div id="works-card-5" class="card">
+                <div class="card-block">
+                    <h5 class="card-title">Abstract 3D logo</h5>
+                    <h6 class="card-subtitle text-muted">Design</h6>
+                </div>
+                <img class="img img-fluid" src="img/8ball.png" alt="Card image" style="width:100%">
+                <div class="card-block card-block-btm">
+                    <p class="card-text">Abstract logo symbolizing rapidity, globality and flexibility.</p>
+                    <br>
+                    <a href="#" class="card-link">See logo in portfolio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div id="works-card-6" class="card">
                 <div class="card-block">
                     <h5 class="card-title">Abstract 3D logo</h5>
                     <h6 class="card-subtitle text-muted">Design</h6>
