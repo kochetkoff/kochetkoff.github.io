@@ -163,8 +163,17 @@ html {
     text-decoration: none;
     color: #ffffff;
 }
+.text-gold{
+    color: #f9e006
+}
+.fa{
+    color: #ffffff;
+}
 .fa:hover {
     color: #ffe500;
+}
+.navbar-text .fa{
+    font-size: 1.2rem;
 }
 #about-icons i {
     display: inline-block;
@@ -203,7 +212,7 @@ html {
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.7);
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
