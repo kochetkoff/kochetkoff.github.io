@@ -20,7 +20,7 @@
 <!-- new navbar start -->
     <nav class="row justify-content-around navbar navbar-toggleable navbar-inverse fixed-top">
         <div class="hidden-sm-down col-auto">
-            <a class="navbar-brand" href="#">A. Kochetkoff</a>
+            <a class="navbar-brand" href="#mainWrapper">A. Kochetkoff</a>
         </div>
         <div class="col-auto">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -286,7 +286,18 @@
 
 <script>
     $(document).ready(function () {
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
 
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
     });
 </script>
 
