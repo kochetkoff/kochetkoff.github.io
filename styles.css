@@ -145,7 +145,7 @@ html {
 #about-description-wrapper {
     padding-top: 0.6rem;
 }
-#about-text {
+#about-description-wrapper p {
     font-family: 'Caveat', cursive;
     font-size: 1.6rem;
     color: rgba(0, 0, 0, 0.75);
@@ -234,7 +234,7 @@ html {
 }
 .ability-card p i {
     padding-right: 0.5rem;
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: rgba(0, 0, 0, 0.4);
 }
 
