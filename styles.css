@@ -89,10 +89,14 @@ html {
 }
 #about-wrapper {
     background: url(img/about-bg-pattern.jpg);
-    min-height: 100vh;
 }
 #about-photo-wrapper {
     padding-top: 0.4rem;
+    min-height: 45vh;
+    background-image: url("./img/about-kochetkoff.gif");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 #about-description-wrapper {
     padding-top: 0.6rem;
