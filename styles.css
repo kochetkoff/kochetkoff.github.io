@@ -28,6 +28,11 @@ html {
     }
 }
 
+@media (min-width: 1600px) {
+    html {
+        font-size: 28px;
+    }
+}
 *::selection{
     background-color: #ffe500;;
     color: rgba(0, 0, 0, 0.8);
