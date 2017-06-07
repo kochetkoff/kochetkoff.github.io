@@ -117,7 +117,7 @@
                     <h5 class="card-title">Factory of shoes site</h5>
                     <h6 class="card-subtitle text-muted">Idea, design, code, content</h6>
                 </div>
-                <img class="img img-fluid h-100" src="./img/luxozo.gif" alt="Card image" style="width:100%">
+                <img data-image-src="./img/luxozo.gif" class="img img-fluid h-100" src="./img/works-img-1.jpg" alt="Card image" style="width:100%">
                 <div class="card-block card-block-btm">
                     <p class="card-text">I developed the concept of site, made design and coded it for a spec shoes company.</p>
                     <a href="http://spec.luxozo.ru/" target="_blank" class="card-link">Go to real site</a>
@@ -130,7 +130,7 @@
                     <h5 class="card-title">Pomodoro timer app</h5>
                     <h6 class="card-subtitle text-muted">Design, code</h6>
                 </div>
-                <img class="img img-fluid h-100" src="./img/pomodoro.gif" alt="Card image" style="width:100%">
+                <img data-image-src="./img/pomodoro.gif" class="img img-fluid h-100" src="./img/works-img-2.jpg" alt="Card image" style="width:100%">
                 <div class="card-block card-block-btm">
                     <p class="card-text">Web application for increasing personal productivity using
                         <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro Technique</a>.
@@ -149,7 +149,7 @@
                     <h5 class="card-title">Quotes generator</h5>
                     <h6 class="card-subtitle text-muted">Design, code</h6>
                 </div>
-                <img class="img img-fluid h-100" src="./img/rqm.gif" alt="Card image" style="width:100%">
+                <img data-image-src="./img/rqm.gif" class="img img-fluid h-100" src="./img/works-img-3.jpg" alt="Card image" style="width:100%">
                 <div class="card-block card-block-btm">
                     <p class="card-text">Random quotes machine. The app prints quotes on click.</p>
                     <br>
@@ -163,7 +163,7 @@
                     <h5 class="card-title">Tribute single page site</h5>
                     <h6 class="card-subtitle text-muted">Code</h6>
                 </div>
-                <img class="img img-fluid h-100" src="./img/gilles.gif" alt="Card image" style="width:100%">
+                <img data-image-src="./img/gilles.gif" class="img img-fluid h-100" src="./img/works-img-4.jpg" alt="Card image" style="width:100%">
                 <div class="card-block card-block-btm">
                     <p class="card-text">Site devoted to Gilles Villeneuve - one of the best F1 drivers. I coded site as
                         my first <a href="https://www.freecodecamp.com/kochetkoff" target="_blank">FCC</a> project.</p>
@@ -181,7 +181,7 @@
                     <h5 class="card-title">Bouncing ball</h5>
                     <h6 class="card-subtitle text-muted">Html, CSS</h6>
                 </div>
-                <img class="img img-fluid h-100" src="./img/8ball.png" alt="Card image" style="width:100%">
+                <img data-image-src="" class="img img-fluid h-100" src="./img/8ball.png" alt="Card image" style="width:100%">
                 <div class="card-block card-block-btm">
                     <p class="card-text">Bouncing 8 ball animation made for fun)</p>
                     <br>
@@ -195,7 +195,7 @@
                     <h5 class="card-title">My next project</h5>
                     <h6 class="card-subtitle text-muted">Idea, design, code, analytics</h6>
                 </div>
-                <img class="img img-fluid h-100" src="./img/coming_soon.png" alt="Card image" style="width:100%">
+                <img data-image-src="" class="img img-fluid h-100" src="./img/coming_soon.png" alt="Card image" style="width:100%">
                 <div class="card-block card-block-btm">
                     <p class="card-text">This could be your app here in my portfolio.</p>
                     <br>
@@ -270,7 +270,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
-        /* Smooth scroll on click*/
+        /* Smooth scroll on click */
         $('a[href^="#"]').on('click',function (e) {
             e.preventDefault();
             var target = this.hash;
@@ -282,6 +282,20 @@
                 window.location.hash = target;
             });
         });
+
+        /* Big image load on scroll */
+        function imgLoad() {
+            if (document.body.scrollTop > 1000){
+                var imgs = document.querySelectorAll('img');
+                for (var i=0; i < imgs.length; i++) {
+                    var img = imgs[i];
+                    var newSrc = img.getAttribute('data-image-src');
+                    if(newSrc) img.src = newSrc;
+                }
+                document.removeEventListener('scroll', imgLoad);
+            }
+        }
+        document.addEventListener('scroll', imgLoad);
     });
 </script>
 
