@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    background-color: rgba(68,0,102,1);
+    background-color: #8FA6C6;
 }
 @media (min-width: 544px) {
     html {
@@ -115,6 +115,9 @@ html {
     text-align: left;
     text-indent: 1.8rem;
 }
+#about-description-wrapper p:last-child{
+    margin-bottom: 3rem;
+}
 #about-icons {
     font-size: 2.6rem;
     font-family: "FontAwesome";
@@ -147,7 +150,7 @@ html {
     padding-bottom: 2rem;
 }
 .card {
-    box-shadow: 0 15px 15px -5px black;
+    box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.9);
     margin-bottom: 2rem;
     border: none;
 }
@@ -204,9 +207,6 @@ html {
 #contact-wrapper div h2 {
     padding-bottom: 0.5rem;
 }
-#contact-subheading-wrapper {
-    padding-left: 1.6rem;
-}
 #contact-subheading-wrapper span {
     font-size: 1.4rem;
     font-weight: 400;
@@ -231,8 +231,3 @@ footer div p {
     padding-right: 1.8rem;
     margin-bottom: 0;
 }
-/*
-.img-fluid {
-    height: 100%;  bug fix for IE11
-}
-*/
