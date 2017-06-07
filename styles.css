@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    background-color: #8FA6C6;
+    background-color: #ffec44;
 }
 @media (min-width: 544px) {
     html {
@@ -99,9 +99,7 @@ html {
 #about-photo-wrapper {
     padding-top: 0.4rem;
     min-height: 45vh;
-    background-image: url("./img/about-kochetkoff.gif");
-    background-repeat: no-repeat;
-    background-position: bottom;
+    background: url("./img/about-kochetkoff.gif") no-repeat bottom;
     background-size: contain;
 }
 #about-description-wrapper {
