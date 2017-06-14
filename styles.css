@@ -35,15 +35,16 @@ html {
     }
 }
 *::selection{
-    background-color: #ffe500;;
+    background-color: #ffe500;
     color: rgba(0, 0, 0, 0.8);
 }
 .small, small {
     font-size: 60%;
 }
-.bg-blur {
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
+#header-skills{
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    background-color: #ffec44;
+    color: rgba(0, 0, 0, 0.85);
 }
 .heading-light {
     padding-top: 3rem;
