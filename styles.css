@@ -42,6 +42,7 @@ html {
     font-size: 60%;
 }
 #header-skills{
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
     padding: 0.2rem 1rem 0.2rem 1rem;
     background-color: #ffec44;
     color: rgba(0, 0, 0, 0.85);
