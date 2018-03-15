@@ -1,233 +1,285 @@
 html {
-    font-size: 16px;
-    background-color: #ffec44;
+  font-size: 16px;
+  background-color: #ffec44;
 }
+
+body {
+  min-width: 300px;
+}
+
 @media (min-width: 544px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
-    html {
-        font-size: 18px;
-    }
+  html {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
-    html {
-        font-size: 26px;
-    }
-    #main-wrapper {
-        min-height: 100vh;
-    }
+  html {
+    font-size: 26px;
+  }
+
+  #main-wrapper {
+    min-height: 100vh;
+  }
 }
 
 @media (min-width: 1600px) {
-    html {
-        font-size: 32px;
-    }
+  html {
+    font-size: 32px;
+  }
 }
-*::selection{
-    background-color: #ffe500;
-    color: rgba(0, 0, 0, 0.8);
+
+*::selection {
+  background-color: #ffe500;
+  color: rgba(0, 0, 0, 0.8);
 }
+
 .small, small {
-    font-size: 60%;
+  font-size: 60%;
 }
-#header-skills{
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    background-color: #ffec44;
-    color: rgba(0, 0, 0, 0.85);
+
+#header-skills {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  background-color: #ffec44;
+  color: rgba(0, 0, 0, 0.85);
 }
+
 .heading-light {
-    padding-top: 3rem;
-    padding-bottom: 1.4rem;
-    color: #ffffff;
-    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
+  padding-top: 3rem;
+  padding-bottom: 1.4rem;
+  color: #fff;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
 }
+
 .heading-dark {
-    padding-top: 3rem;
-    padding-bottom: 1.4rem;
-    color:  rgba(0,0,0,0.9);
-    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  padding-top: 3rem;
+  padding-bottom: 1.4rem;
+  color: rgba(0, 0, 0, 0.9);
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
-.navbar-brand{
-    font-family: 'Caveat', cursive;
-    color: rgb(255,255,255) !important;
+
+.navbar-brand {
+  font-family: 'Caveat', cursive;
+  color: rgb(255, 255, 255) !important;
 }
+
 #main-wrapper {
-    color: #ffffff;
-    background-color: rgba(68,0,102,1);
-    background-image: -moz-linear-gradient( 90deg, rgb(68,0,102) 0%, rgb(154,7,228) 61%, rgb(68,0,102) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(68,0,102) 0%, rgb(154,7,228) 61%, rgb(68,0,102) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(68,0,102) 0%, rgb(154,7,228) 61%, rgb(68,0,102) 100%);
+  color: #fff;
+  background-color: rgba(68, 0, 102, 1);
+  background-image: -moz-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(154, 7, 228) 61%, rgb(68, 0, 102) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(154, 7, 228) 61%, rgb(68, 0, 102) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(154, 7, 228) 61%, rgb(68, 0, 102) 100%);
 }
+
 #main-heading-wrapper {
-    margin-top: 3rem;
-    margin-bottom: 0;
-    padding-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  padding-top: 1rem;
 }
+
 #main-subheading-wrapper {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
+
 #main-subheading-wrapper p {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.8rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8rem;
 
 }
+
 #main-btn-wrapper {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
-#main-wrapper .btn span{
-    font-size: 2rem;
+
+#main-wrapper .btn span {
+  font-size: 2rem;
 }
+
 #main-wrapper .btn {
-    padding-top: 0.1rem;
-    padding-bottom: 0.2rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
 }
+
 #about-wrapper {
-    background: url(img/about-bg-pattern.jpg);
+  background: url(img/about-bg-pattern.jpg);
 }
+
 #about-photo-wrapper {
-    padding-top: 0.4rem;
-    min-height: 45vh;
-    background: url("./img/about-kochetkoff.gif") no-repeat bottom;
-    background-size: contain;
+  padding-top: 0.4rem;
+  min-height: 45vh;
+  background: url("./img/about-kochetkoff.gif") no-repeat bottom;
+  background-size: contain;
 }
+
 #about-description-wrapper {
-    padding-top: 0.6rem;
+  padding-top: 0.6rem;
 }
+
 #about-description-wrapper p {
-    font-family: 'Caveat', cursive;
-    font-size: 1.6rem;
-    color: rgba(0, 0, 0, 0.75);
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 1.8rem;
+  font-family: 'Caveat', cursive;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.2;
+  text-align: left;
+  text-indent: 1.8rem;
 }
-#about-description-wrapper p:last-child{
-    margin-bottom: 3rem;
+
+#about-description-wrapper p:last-child {
+  margin-bottom: 3rem;
 }
+
 #about-icons {
-    font-size: 2.6rem;
-    font-family: "FontAwesome";
-    color: #ffffff;
-    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
+  font-size: 2.6rem;
+  font-family: "FontAwesome";
+  color: #fff;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
 }
-#about-icons a{
-    text-decoration: none;
-    color: #ffffff;
+
+#about-icons a {
+  text-decoration: none;
+  color: #fff;
 }
-.text-gold{
-    color: #ffec44;
+
+.text-gold {
+  color: #ffec44;
 }
-.fa{
-    color: #ffffff;
+
+.fa {
+  color: #fff;
 }
+
 .fa:hover {
-    color: #ffe500;
+  color: #ffe500;
 }
-.navbar-text .fa{
-    font-size: 1.2rem;
+
+.navbar-text .fa {
+  font-size: 1.2rem;
 }
+
 #about-icons i {
-    display: inline-block;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
+
 #works-wrapper {
-    background-color: #8FA6C6;
-    padding-bottom: 2rem;
+  background-color: #8fa6c6;
+  padding-bottom: 2rem;
 }
+
 .card {
-    box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.9);
-    margin-bottom: 2rem;
-    border: none;
+  box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.9);
+  margin-bottom: 2rem;
+  border: none;
 }
+
 .card-block {
-    padding: 1rem;
-    line-height: 1.2rem;
+  padding: 1rem;
+  line-height: 1.2rem;
 }
-.card-block h5{
-    font-size: 1.2rem;
+
+.card-block h5 {
+  font-size: 1.2rem;
 }
-.card-block h6{
-    font-size: 1rem;
+
+.card-block h6 {
+  font-size: 1rem;
 }
+
 .card-subtitle {
-    font-weight: lighter;
+  font-weight: lighter;
 }
+
 .card-block-btm {
-    font-size: 1rem;
-    min-height: 8rem;
+  font-size: 1rem;
+  min-height: 8rem;
 }
+
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.7);
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.7);
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
+
 .navbar img {
-    width: auto;
-    height: 2rem;
-    opacity: 0.8;
+  width: auto;
+  height: 2rem;
+  opacity: 0.8;
 }
+
 #ability-wrapper {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
+
 .ability-card {
-    padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
+
 .ability-card p span {
-    font-size: 2rem;
-    color: rgba(60, 0, 90, 0.90);
+  font-size: 2rem;
+  color: rgba(60, 0, 90, 0.90);
 }
+
 .ability-card p i {
-    padding-right: 0.5rem;
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.4);
+  padding-right: 0.5rem;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.4);
 }
+
 #contact-wrapper {
-    background-color: #4C5F79;
-    color: white;
+  background-color: #4c5f79;
+  color: white;
 }
+
 #contact-text-wrapper {
-    padding: 1rem 1.8rem 1rem 1.8rem;
+  padding: 1rem 1.8rem 1rem 1.8rem;
 }
+
 #contact-wrapper div h2 {
-    padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
+
 #contact-subheading-wrapper span {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #ffe500;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ffe500;
 }
+
 #contact-form-wrapper {
-    background-color: white;
-    color: rgba(0, 0, 0, 0.9);
-    box-shadow: -10px 8px 12px 6px rgba(0, 0, 0, 0.7);
-    padding: 1rem;
-    margin-bottom: 2rem;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.9);
+  box-shadow: -10px 8px 12px 6px rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
+
 footer {
-    background-color: #4C5F79;
-    color: rgba(255,255,255,0.6);
+  background-color: #4c5f79;
+  color: rgba(255, 255, 255, 0.6);
 }
+
 footer div hr {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
+
 footer div p {
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-    margin-bottom: 0;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  margin-bottom: 0;
 }
