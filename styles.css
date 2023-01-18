@@ -46,8 +46,15 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.small, small {
+.small,
+small {
   font-size: 60%;
+}
+
+.content-wrapper {
+  max-width: 1600px;
+  text-align: center;
+  margin: auto;
 }
 
 #header-skills {
@@ -121,7 +128,7 @@ body {
 
 #about-photo-wrapper {
   padding-top: 0.4rem;
-  min-height: 45vh;
+  min-height: 22vh;
   background: url("./img/about-kochetkoff.gif") no-repeat bottom;
   background-size: contain;
 }
