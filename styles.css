@@ -86,9 +86,9 @@ small {
 #main-wrapper {
   color: #fff;
   background-color: rgba(68, 0, 102, 1);
-  background-image: -moz-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(154, 7, 228) 61%, rgb(68, 0, 102) 100%);
-  background-image: -webkit-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(154, 7, 228) 61%, rgb(68, 0, 102) 100%);
-  background-image: -ms-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(154, 7, 228) 61%, rgb(68, 0, 102) 100%);
+  background-image: -moz-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(187, 38, 73) 61%, rgb(68, 0, 102) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(187, 38, 73) 61%, rgb(68, 0, 102) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(187, 38, 73) 61%, rgb(68, 0, 102) 100%);
 }
 
 #main-heading-wrapper {
@@ -185,7 +185,7 @@ small {
 }
 
 #works-wrapper {
-  background-color: #8fa6c6;
+  background-color: #BFCAD6;
   padding-bottom: 2rem;
 }
 
@@ -250,7 +250,7 @@ small {
 }
 
 #contact-wrapper {
-  background-color: #4c5f79;
+  background-color: #BB2649;
   color: white;
 }
 
@@ -277,8 +277,7 @@ small {
 }
 
 footer {
-  background-color: #4c5f79;
-  color: rgba(255, 255, 255, 0.6);
+  background-color: #fff;
 }
 
 footer div hr {
