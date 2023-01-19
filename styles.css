@@ -217,6 +217,27 @@ small {
   min-height: 8rem;
 }
 
+@media (min-width: 992px) {
+  .card-block {
+    padding: 0.4rem;
+    line-height: 0.8rem;
+    min-height: 2rem;
+  }
+
+  .card-block h5 {
+    font-size: 0.6rem;
+  }
+
+  .card-block h6 {
+    font-size: 0.4rem;
+  }
+
+  .card-block-btm {
+    font-size: 0.4rem;
+    min-height: 6rem;
+  }
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.7);
