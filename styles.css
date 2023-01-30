@@ -85,10 +85,19 @@ small {
 
 #main-wrapper {
   color: #fff;
-  background-color: rgba(68, 0, 102, 1);
-  background-image: -moz-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(187, 38, 73) 61%, rgb(68, 0, 102) 100%);
-  background-image: -webkit-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(187, 38, 73) 61%, rgb(68, 0, 102) 100%);
-  background-image: -ms-linear-gradient(90deg, rgb(68, 0, 102) 0%, rgb(187, 38, 73) 61%, rgb(68, 0, 102) 100%);
+  background-color: rgb(187, 38, 73) 61%;
+  background-image: -moz-linear-gradient(90deg,
+      rgb(91, 192, 222) 1%,
+      rgb(187, 38, 73) 61%,
+      rgb(255, 61, 0) 100%);
+  background-image: -webkit-linear-gradient(90deg,
+      rgb(91, 192, 222) 1%,
+      rgb(187, 38, 73) 61%,
+      rgb(255, 61, 0) 100%);
+  background-image: -ms-linear-gradient(90deg,
+      rgb(91, 192, 222) 1%,
+      rgb(187, 38, 73) 61%,
+      rgb(255, 61, 0) 100%);
 }
 
 #main-heading-wrapper {
